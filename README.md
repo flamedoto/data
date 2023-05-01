@@ -1,63 +1,148 @@
-# Data sets
+# Discord Rich Presence
 
-Data sets created for stories on [The Pudding](https://pudding.cool), open to the public.
+[![Release 📦](https://github.com/Lachee/discord-rpc-csharp/actions/workflows/release.yml/badge.svg)](https://github.com/Lachee/discord-rpc-csharp/actions/workflows/release.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/30c4e9f58b7f4a058f79ad0acd743edf)](https://www.codacy.com/gh/Lachee/discord-rpc-csharp/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Lachee/discord-rpc-csharp&amp;utm_campaign=Badge_Grade) [![Nuget](https://img.shields.io/nuget/v/DiscordRichPresence.svg)](https://www.nuget.org/packages/DiscordRichPresence/) 
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/lachee/discord-rpc-csharp?label=master)](https://github.com/Lachee/discord-rpc-csharp/tags)
 
-| Pudding Story Title                                                                                                      | Story Publish Date | Data Update Frequency | Keywords                                                                | Data                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------ | --------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| [The Greatest Unexpected NBA Performances](https://www.youtube.com/watch?v=jV49bDzkQhY)                                                         | February 2023         | Never                 | basketball, NBA                                           | [repo](https://github.com/the-pudding/data/tree/master/nba-unexpected)                                       |
-| [We think this cool study we found is flawed. Help us reproduce it.](https://pudding.cool/2022/04/random)                                                         | April 2022         | Daily                 | replication, randomness                                           | [json](https://pudding.cool/2022/04/random-data/raw.json)                                       |
-| [Who's in Your Wallet?](https://pudding.cool/2022/04/banknotes/) | April 2022 | Never | banknotes, currency | [repo](https://github.com/the-pudding/banknotes/tree/master/src/data) |
-| [When Women Make Headlines](https://pudding.cool/2022/02/women-in-headlines)                                                         | February 2022         | Never                 | headlines, women                                           | [repo](https://github.com/the-pudding/data/tree/master/women-in-headlines)                                       |
-| [The Naked Truth](https://pudding.cool/2021/03/foundation-names)                                                         | March 2021         | Never                 | beauty, makeup, diversity, US                                           | [repo](https://github.com/the-pudding/data/tree/master/foundation-names)                                       |
-| [Winning the Internet](https://pudding.cool/projects/newsletter/)                                                        | July 2020          | Sometimes             | newsletter                                                              | [repo](https://github.com/the-pudding/data/tree/master/winning-the-internet)                                   |
-| [Police Misconduct](https://pudding.cool/2020/10/police-misconduct/)                                                     | October 2020       | Never                 | social                                                                  | [data](https://github.com/the-pudding/police_misconduct_pudding/tree/main/src/assets/data)                     |
-| [Whole Foods x 15 Percent Pledge](https://www.instagram.com/p/CF5UrXmjnrH/)                                              | October 2020       | Never                 | retail                                                                  | [data](https://www.notion.so/thepudding/Whole-Foods-Data-FAQ-3b69e387e78c41e4af27b16c6d3e9459)                 |
-| [How candidate diversity impacts color diversity](https://pudding.cool/2020/08/campaign-colors/)                         | August 2020        | Never                 | politics, design, color                                                 | [repo](https://github.com/the-pudding/data/tree/master/campaign-colors)                                        |
-| [90s Song Memory](https://pudding.cool/2020/07/song-decay/)                                                              | July 2020          | Never                 | music                                                                   | [repo](https://github.com/the-pudding/song-decay-clean/tree/master/src/assets/data)                            |
-| [The Infinite Monkey Theorem Experiment](https://pudding.cool/2020/04/infinite/)                                         | Apr 2020           | Daily                 | piano, probability                                                      | [json](https://pudding.cool/2020/04/infinite-data/data.json)                                                   |
-| [Just how does Kidz Bop censor songs?](https://pudding.cool/2020/04/kidz-bop/)                                           | Apr 2020           | Never                 | Kidz Bop, music, censorship                                             | [repo](https://github.com/the-pudding/data/tree/master/kidz-bop)                                               |
-| [The Evolution of the American Census](https://pudding.cool/2020/03/census-history)                                      | Mar 2020           | Never                 | US, census                                                              | [repo](https://github.com/the-pudding/data/tree/master/census-history)                                         |
-| [Where will you need your umbrella?](https://pudding.cool/2020/02/rain)                                                  | Feb 2020           | Never                 | weather, precipitation                                                  | [repo](https://github.com/the-pudding/data/tree/master/rain)                                                   |
-| [Laughing OnLine](https://pudding.cool/2019/10/laugh)                                                                    | Oct 2019           | Never                 | laughter, Reddit                                                        | [repo](https://github.com/the-pudding/data/tree/master/laugh)                                                  |
-| [Finding Forever Homes](https://pudding.cool/2019/10/shelters)                                                           | Oct 2019           | Never                 | dogs, PetFinder, US                                                     | [repo](https://github.com/the-pudding/data/tree/master/dog-shelters)                                           |
-| [Vocal Register and Singing Voices](https://pudding.cool/2019/08/register/)                                              | Aug 2019           | Never                 | music                                                                   | [repo](https://github.com/the-pudding/falsetto-story)                                                          |
-| [Book Covers](https://pudding.cool/2019/07/book-covers/)                                                                 | July 2019          | Never                 | books                                                                   | [repo](https://github.com/the-pudding/book-covers)                                                             |
-| [Hipster Summer Reading List](https://pudding.cool/2019/06/summer-reading/)                                              | June 2019          | Never                 | books, library, Seattle                                                 | [repo](https://github.com/the-pudding/data/tree/master/summer-reading)                                         |
-| [Best Year in Music](https://pudding.cool/projects/music-history/)                                                       | June 2019          | Sometimes             | music                                                                   | [repo](https://github.com/the-pudding/music-taste-2019)                                                        |
-| [A People Map of the UK](https://pudding.cool/2019/06/people-map-uk)                                                     | June 2019          | Never                 | wiki, names, UK                                                         | [repo](https://github.com/the-pudding/data/tree/master/people-map-uk)                                          |
-| [A People Map of the US](https://pudding.cool/2019/05/people-map)                                                        | May 2019           | Never                 | wiki, names, US                                                         | [repo](https://github.com/the-pudding/data/tree/master/people-map)                                             |
-| [Sing My Name](https://pudding.cool/2019/05/names-in-songs)                                                              | May 2019           | Never                 | music, names, US                                                        | [repo](https://github.com/the-pudding/data/tree/master/names-in-songs)                                         |
-| [The Rise of Hyphenated Last Names in Pro Sports](https://pudding.cool/2019/05/hyphens/)                                 | May 2019           | Never                 | sports, culture, names, MLB, NBA, NFL, NHL, NWSL, WNBA                  | [repo](https://github.com/the-pudding/hyphenated-names)                                                        |
-| [The NBA Has A Defensive Three Seconds Problem](https://pudding.cool/2019/05/three-seconds)                              | May 2019           | Never                 | basketball, NBA                                                         | [repo](https://github.com/the-pudding/data/tree/master/three-seconds)                                          |
-| [Colorism in High Fashion](https://pudding.cool/2019/04/vogue)                                                           | April 2019         | Never                 | fashion, diversity, US                                                  | [repo](https://github.com/the-pudding/data/tree/master/vogue)                                                  |
-| [EU Regions](https://pudding.cool/2019/04/eu-regions/)                                                                   | April 2019         | Daily                 | european union, eu                                                      | [data and analysis](https://github.com/the-pudding/eu-regions/tree/master/src/assets/data)                     |
-| [NBA Spell Jam](https://pudding.cool/2019/03/nba-spelling/)                                                              | March 2019         | Daily                 | spelling, names, sankey, NBA                                            | [data](https://pudding.cool/2019/03/sankey-nba-data/data-all.json)                                             |
-| [Who is the Biggest Pop Star?](https://pudding.cool/2019/03/pop-music/)                                                  | March 2019         | Never                 | music                                                                   | [repo](https://github.com/the-pudding/telephone/tree/master/src/assets/data)                                   |
-| [How Many High School Stars Make It to the NBA?](https://pudding.cool/2019/03/hype/)                                     | March 2019         | Never                 | US, basketball, NBA                                                     | [repo](https://github.com/the-pudding/data/tree/master/hype)                                                   |
-| [The Gyllenhaal Experiment](https://pudding.cool/2019/02/gyllenhaal/)                                                    | February 2019      | Never                 | spelling, names, sankey                                                 | [data](https://pudding.cool/2019/02/sankey-data/data-all.json)                                                 |
-| [The Sexualized Messages Dress Codes are Sending to Students](https://pudding.cool/2019/02/dress-code-sexualization/)    | February 2019      | Never                 | US, dress code, high school                                             | [repo](https://github.com/the-pudding/data/tree/master/dress-codes)                                            |
-| [The Largest Vocabulary in Hip Hop](https://pudding.cool/projects/vocabulary/index.html/)                                | January 2019       | Sometimes             | music                                                                   | [data](https://docs.google.com/spreadsheets/d/1HIIfgDpNMM-j0hoQHN-yP5P1lNOfJuvym0u0sdWwD9g/edit#gid=737896402) |
-| [Internet Boy Band Database](https://pudding.cool/2018/11/boy-bands/)                                                    | November 2018      | Never                 | music, boybands, dance, US                                              | [repo](https://github.com/the-pudding/data/tree/master/boybands)                                               |
-| [Thirty Years of American Anxieties](https://pudding.cool/2018/11/dearabby/)                                             | November 2018      | Never                 | advice, anxiety                                                         | [repo](https://github.com/the-pudding/data/tree/master/dearabby)                                               |
-| [The Winningest Cities in North American Sports](https://pudding.cool/2018/11/titletowns/)                               | November 2018      | Never                 | sports, championships, rankings, basketball, football, hockey, baseball | [repo](https://github.com/the-pudding/data/tree/master/titletowns)                                             |
-| [Human Terrain](https://pudding.cool/2018/10/city_3d/)                                                                   | October 2018       | Never                 | population                                                              | [how-to](https://docs.google.com/document/d/1Us_1QBHShdMe8-laKhGh_mjkXxOw-74-9mxJAx_DvKE/edit)                 |
-| [What Does the Path To Fame Look Like?](https://pudding.cool/2018/10/wiki-breakout/)                                     | October 2018       | Never                 | celebrities, culture                                                    | [repo](https://github.com/the-pudding/wiki-billboard-data#historical-data)                                     |
-| [The Celebrity Billboard Project](https://pudding.cool/2018/09/wiki-billboard/)                                          | September 2018     | Daily                 | celebrities, culture                                                    | [repo](https://github.com/the-pudding/wiki-billboard-data)                                                     |
-| [Film vs. Digital](https://pudding.cool/2018/08/filmordigital/)                                                          | August 2018        | Never                 | film, movies                                                            | [repo](https://github.com/the-pudding/data/tree/master/filmordigital)                                          |
-| [Women's Pockets are Inferior](https://pudding.cool/2018/08/pockets)                                                     | August 2018        | Never                 | pockets, fashion, equality, women                                       | [repo](https://github.com/the-pudding/data/tree/master/pockets)                                                |
-| [Life After Death on Wikipedia](https://pudding.cool/2018/08/wiki-death)                                                 | August 2018        | Never                 | Wikipedia, pageviews, death                                             | [repo](https://github.com/the-pudding/wiki-death-data)                                                         |
-| [What Airport Traffic Tells Us About the World's Megacities](https://pudding.cool/2018/07/airports)                      | July 2018          | Never                 | cities, population, airports                                            | [repo](https://github.com/the-pudding/airports)                                                                |
-| [Let's Talk About Birth Control](https://pudding.cool/2018/07/birth_control)                                             | July 2018          | Never                 | contraception, US, birth control, health, survey, CDC                   | [repo](https://github.com/the-pudding/data/tree/master/birth-control)                                          |
-| [Men are from Chelsea, Women are from Park Slope](https://github.com/the-pudding/data/tree/master/gayborhoods)           | June 2018          | Never                 | gayborhoods, gay, lesbian, queer, LGBTQ, neighborhoods, pride, gender   | [repo](https://github.com/the-pudding/data/tree/master/gayborhoods)                                            |
-| [The Diversity of Makeup Shades](https://pudding.cool/2018/06/makeup-shades)                                             | June 2018          | Never                 | beauty, makeup, Fenty, diversity, US, global                            | [repo](https://github.com/polygraph-cool/data/tree/master/makeup-shades)                                       |
-| [The Good, the Rad, and the Gnarly](https://pudding.cool/2018/06/skate-music/)                                           | June 2018          | Never                 | skateboard, music, genre, gnarly                                        | [repo](https://github.com/polygraph-cool/data/tree/master/skate-music)                                         |
-| [Baking the Most Average Chocolate Chip Cookie](https://pudding.cool/2018/05/cookies)                                    | May 2018           | Never                 | baking, cookies, machine learning, NLP                                  | [repo](https://github.com/polygraph-cool/data/tree/master/cookies)                                             |
-| [One-Hit Wonders in Sports](https://pudding.cool/2018/04/one-hit-wonders)                                                | April 2018         | Never                 | sports, ranking, basketball, golf, tennis, baseball, hockey             | [repo](https://github.com/polygraph-cool/data/tree/master/one-hit-wonders)                                     |
-| [The Birthday Paradox Experiment](https://pudding.cool/2018/04/birthday-paradox)                                         | April 2018         | Daily                 | math, paradox, birthday                                                 | [json](https://pudding.cool/2018/04/birthday-data/data.json)                                                   |
-| [A Tale of Two Cities](https://pudding.cool/2018/03/neighborhoods)                                                       | March 2018         | Never                 | neighborhoods, business, Yelp                                           | [repo](https://github.com/polygraph-cool/data/tree/master/neighborhoods)                                       |
-| [The Structure of Stand-Up Comedy](https://pudding.cool/2018/02/stand-up)                                                | February 2018      | Never                 | stand-up, comedy, Ali Wong, US                                          | [repo](https://github.com/polygraph-cool/data/tree/master/stand-up)                                            |
-| [Greetings from Mars](https://pudding.cool/2018/01/mars-weather/)                                                        | February 2018      | Daily                 | mars, weather, Curiosity Rover, global                                  | [repo](https://github.com/polygraph-cool/data/tree/master/mars-weather)                                        |
-| [How far is too far? An analysis of driving times to abortion clinics in the US.](https://pudding.cool/2017/09/clinics/) | September 2017     | Never                 | abortion, clinics, duration, access, US                                 | [repo](https://github.com/polygraph-cool/data/tree/master/clinics)                                             |
-| [Free Willy & Flipper by the Numbers](https://pudding.cool/2017/07/cetaceans/)                                           | July 2017          | Never                 | whales, dolphins, captivity, US                                         | [repo](https://github.com/polygraph-cool/data/tree/master/cetaceans)                                           |
-| [The Timing of Baby Making](https://pudding.cool/2017/05/births/)                                                        | May 2017           | Never                 | births, babies, county, US                                              | [repo](https://github.com/polygraph-cool/data/tree/master/births)                                              |
-| [NBA Last Two Minute Report](https://pudding.cool/2017/02/two-minute-report)                                             | February 2017      | Daily                 | nba, basketball, referee, US                                            | [repo](https://github.com/polygraph-cool/last-two-minute-report/tree/master/output)                            |
+This is a C# _implementation_ of the [Discord RPC](https://github.com/discordapp/discord-rpc) library which was originally written in C++. This avoids having to use the official C++ and instead provides a managed way of using the Rich Presence within the .NET environment*.
+
+While the official C++ library has been deprecated, this library has continued support and development for all your Rich Presence need, without requiring the Game SDK.
+
+Here are some key features of this library:
+ - **Message Queuing**
+ - **Threaded Reads**
+ - **Managed Pipes***
+ - **Error Handling** & **Error Checking** with automatic reconnects
+ - **Events from Discord** (such as presence update and join requests)
+ - **Full Rich Presence Implementation** (including Join / Spectate)
+ - **Inline Documented** (for all your IntelliSense needs)
+ - **Helper Functionality** (eg: AvatarURL generator from Join Requests)
+ - **Ghost Prevention** (Tells Discord to clear the RP on disposal)
+ - **Full Unity3D Editor** (Contains all the tools, inspectors and helpers for a Unity3D game all in one package).
+
+# Documentation
+All the documentation can be found [lachee.github.io/discord-rpc-csharp/docs/](https://lachee.github.io/discord-rpc-csharp/)
+
+# Installation
+
+**Dependencies:**
+ - Newtonsoft.Json 
+ - .NET Standard 2.0
+ 
+### **.NET Project**
+
+For projects that target either .NET Core or .NETFX, you can get the package on [nuget](https://www.nuget.org/packages/DiscordRichPresence/):
+```
+PM> Install-Package DiscordRichPresence
+```
+You can also [Download or Build](#building) your own version of the library if you have more specific requirements.
+
+### **Unity3D Game Engine**
+
+Unity Package is being moved to [Lachee/Discord-RPC-Unity](https://github.com/Lachee/discord-rpc-unity). 
+Please check the releases / documentation there.
+
+## Usage
+
+The Discord.Example project within the solution contains example code, showing how to use all available features. For Unity Specific examples, check out the example project included. There are 3 important stages of usage, Initialization, Invoking and Deinitialization. It's important you follow all 3 stages to ensure proper behaviour of the library.
+
+**Initialization**
+
+This stage will setup the connection to Discord and establish the events. Once you have done the initialization you can call `SetPresence` and other variants as many times as you wish throughout your code. Please note that ideally this should only run once, otherwise conflicts may occur with them trying to access the same Discord client at the same time.
+```csharp
+public DiscordRpcClient client;
+
+//Called when your application first starts.
+//For example, just before your main loop, on OnEnable for unity.
+void Initialize() 
+{
+	/*
+	Create a Discord client
+	NOTE: 	If you are using Unity3D, you must use the full constructor and define
+			 the pipe connection.
+	*/
+	client = new DiscordRpcClient("my_client_id");			
+	
+	//Set the logger
+	client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
+
+	//Subscribe to events
+	client.OnReady += (sender, e) =>
+	{
+		Console.WriteLine("Received Ready from user {0}", e.User.Username);
+	};
+		
+	client.OnPresenceUpdate += (sender, e) =>
+	{
+		Console.WriteLine("Received Update! {0}", e.Presence);
+	};
+	
+	//Connect to the RPC
+	client.Initialize();
+
+	//Set the rich presence
+	//Call this as many times as you want and anywhere in your code.
+	client.SetPresence(new RichPresence()
+	{
+		Details = "Example Project",
+		State = "csharp example",
+		Assets = new Assets()
+		{
+			LargeImageKey = "image_large",
+			LargeImageText = "Lachee's Discord IPC Library",
+			SmallImageKey = "image_small"
+		}
+	});	
+}
+```
+
+
+
+**Invoking**
+
+**Invoking is optional. Use this when thread safety is paramount.**
+
+The client will store messages from the pipe and won't invoke them until you call `Invoke()` or `DequeueMessages()`. It does this because the pipe is working on another thread, and manually invoking ensures proper thread safety and order of operations (especially important in Unity3D applications).
+
+In order to enable this method of event calling, you need to set it in the constructor of the DiscordRpcClient under `autoEvents`.
+```csharp
+//The main loop of your application, or some sort of timer. Literally the Update function in Unity3D
+void Update() 
+{
+	//Invoke all the events, such as OnPresenceUpdate
+	client.Invoke();
+};
+```
+
+Here is an example on how a Timer could be used to invoke the events for a WinForm
+```csharp
+var timer = new System.Timers.Timer(150);
+timer.Elapsed += (sender, args) => { client.Invoke(); };
+timer.Start();
+```
+
+**Deinitialization**
+
+It's important that you dispose your client before your application terminates. This will stop the threads, abort the pipe reads, and tell Discord to clear the presence. Failure to do so may result in a memory leak!
+```csharp
+//Called when your application terminates.
+//For example, just after your main loop, on OnDisable for unity.
+void Deinitialize() 
+{
+	client.Dispose();
+}
+```
+
+## Building
+
+[![Release 📦](https://github.com/Lachee/discord-rpc-csharp/actions/workflows/release.yml/badge.svg)](https://github.com/Lachee/discord-rpc-csharp/actions/workflows/release.yml) [![Documentation 📚](https://github.com/Lachee/discord-rpc-csharp/actions/workflows/documentation.yml/badge.svg)](https://github.com/Lachee/discord-rpc-csharp/actions/workflows/documentation.yml)
+
+
+**DiscordRPC Library**
+```
+dotnet build -c Release
+```
+
+**Unity3D**
+
+If you wish to have barebones Unity3D implementation, you need to build the `DiscordRPC.dll`, the [Unity Named Pipes](https://github.com/Lachee/unity-named-pipes) Library and the [UnityNamedPipe.cs](https://github.com/Lachee/discord-rpc-csharp/blob/master/Unity%20Example/Assets/Discord%20RPC/Scripts/Control/UnityNamedPipe.cs). Put these in your own Unity Project and the `.dll`s in a folder called `Plugins`. 
